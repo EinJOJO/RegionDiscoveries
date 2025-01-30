@@ -1,0 +1,21 @@
+name: RegionDiscoveries
+version: 1.0.0
+main: it.einjojo.regiondiscoveries.RegionDiscoveryPlugin
+description: Triggers Announcements when a player discovers a new region
+author: EinJOJO
+website: https://einjojo.it
+api-version: '1.21.1'
+dependencies:
+  server:
+    helper:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    helper-mongo:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    WGRegionEvents:
+      load: BEFORE
+      required: true
+      join-classpath: true
